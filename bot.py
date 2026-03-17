@@ -91,7 +91,8 @@ _available_products_cache_time = 0
 CACHE_TTL = 30
 
 def invalidate_caches():
-    global _categories_cache, _categories_cache_time, _available_products_cache, _available_products_cache_time
+    global _categories_cache, _categories_cache_time, _subcategories_cache, _types_cache, _products_cache
+    global _available_products_cache, _available_products_cache_time
     _categories_cache = None
     _categories_cache_time = 0
     _subcategories_cache.clear()
